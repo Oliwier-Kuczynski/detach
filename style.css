@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --white: #fff;
+  --primary-color-1: #050718;
+  --neutral-color-1: #a6a9b8;
+  --neutral-color-2: #171820;
+  --accent-color-1: #ac00fd;
+  --accent-color-2: #ff4040;
+  --bg-gap: 2.625rem; /*40px*/
+  --md-gap: 1.875rem; /*30px*/
+  --sm-gap: 1.25rem; /*20px*/
+  --xsm-gap: 1rem; /*16px*/
+  --xxsm-gap: 0.5rem; /*16px*/
+  --font-size-1: 4.125rem; /*66px*/
+  --font-size-2: 2.625rem; /*42px*/
+  --font-size-3: 1.375rem; /*22px*/
+  --font-size-4: 1.25rem; /*20px*/
+  --font-size-5: 1.125rem; /*18px*/
+  --font-size-6: 1rem; /*16px*/
+  --font-size-7: 0.875rem; /*14px*/
+  --font-weight-400: 400;
+  --font-weight-600: 600;
+  --font-weight-800: 800;
+  --border-radius: 0.5rem;
+  --border-radius-sm: 0.375rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color-1);
+  font-family: "Manrope", sans-serif;
+  font-weight: var(--font-weight-400);
+  color: var(--neutral-color-1);
+}
+
+a {
+  text-decoration: none;
+  font-size: var(--font-size-6);
+  color: var(--neutral-color-1);
+}
+
+a:hover,
+:focus {
+  opacity: 0.8;
+}
+
+h1,
+.h1 {
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-800);
+  color: var(--white);
+  line-height: 1.5;
+}
+
+h2,
+.h2 {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-800);
+  color: var(--white);
+}
+
+.container {
+  width: 100%;
+  max-width: 100rem;
+  margin-inline: auto;
+  padding-inline: 4rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+  font-size: var(--font-size-5);
+  color: var(--white);
+  font-weight: var(--font-weight-600);
+  background: linear-gradient(
+    to right,
+    var(--accent-color-2),
+    var(--accent-color-1)
+  );
+  border-radius: var(--border-radius);
+  transition: opacity 0.2s ease-out;
+}
+
+.btn:hover,
+:focus {
+  opacity: 0.8;
+}
+
+.highlight {
+  padding: 0.4rem 0.25rem;
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color-2),
+    var(--accent-color-1)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.highlight-border {
+  position: relative;
+  background: var(--primary-color-1);
+  border-radius: var(--border-radius-sm);
+}
+
+.highlight-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color-2),
+    var(--accent-color-1)
+  );
+  z-index: -1;
+  border-radius: var(--border-radius-sm);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  justify-items: start;
+}
+
+.bg-gap {
+  gap: var(--bg-gap);
+}
+
+.md-gap {
+  gap: var(--md-gap);
+}
+
+.sm-gap {
+  gap: var(--sm-gap);
+}
+
+.xsm-gap {
+  gap: var(--xsm-gap);
+}
+
+.xxsm-gap {
+  gap: var(--xxsm-gap);
+}
+
+.primary-nav {
+  padding-block: 2rem;
+  justify-content: space-between;
+}
+
+.header {
+  margin-top: 4rem;
+  align-items: center;
+  gap: 10rem;
+}
+
+.steps-section {
+  margin-top: 8rem;
+  justify-items: center;
+  gap: calc(var(--bg-gap) * 2);
+}
+
+.steps-section__header {
+  max-width: 40rem;
+  text-align: center;
+}
+
+.steps-section__card {
+  flex: 1;
+  align-items: start;
+  padding: 2rem;
+  background-color: var(--neutral-color-2);
+  border-radius: var(--border-radius);
+}
