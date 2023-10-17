@@ -165,7 +165,7 @@ h2,
 }
 
 .steps-section {
-  margin-top: 8rem;
+  margin-top: 10rem;
   justify-items: center;
   gap: calc(var(--bg-gap) * 2);
 }
@@ -181,4 +181,33 @@ h2,
   padding: 2rem;
   background-color: var(--neutral-color-2);
   border-radius: var(--border-radius);
+}
+
+.options-section {
+  margin-top: 10rem;
+}
+
+.options-section__title {
+  max-width: 30rem;
+}
+
+.comparison-section {
+  margin-top: 10rem;
+}
+
+.comparison-section > div {
+  margin-top: 10rem;
+  gap: 10rem;
+}
+
+.comparison-section__content {
+  align-content: start;
+}
+
+.integrations-section {
+  margin-top: 10rem;
+}
+
+.about-us-section {
+  margin-top: 10rem;
 }
