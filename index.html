@@ -21,8 +21,8 @@
           <a href="#">Contact</a>
         </div>
         <div class="flex bg-gap">
-          <a href="#">Log in</a>
-          <a href="#">Sign up</a>
+          <a href="login.php">Log in</a>
+          <a href="register.php">Sign up</a>
         </div>
       </nav>
       <header class="header flex">
@@ -151,148 +151,161 @@
           </div>
         </div>
       </section>
-      <section class="integrations-section">
-        <h2>Speed up Your Workflow With Our <span>Integrations</span></h2>
-        <p>
-          Remove background from images of humans, animals or objects and
-          download high-resolution images for free.
-        </p>
-        <div>
-          <img src="./images/figma.png" alt="figma" />
-          <p>Figma</p>
-        </div>
-        <div>
-          <img src="./images/xd.png" alt="xd" />
-          <p>Adobe XD</p>
-        </div>
-        <div>
-          <img src="./images/sketch.png" alt="sketch" />
-          <p>Sketch</p>
-        </div>
-        <div>
-          <img src="./images/woocomarce.png" alt="woo" />
-          <p>Woocommerce</p>
-        </div>
-        <button>See All Plugins</button>
-      </section>
-      <section class="about-us-section">
-        <div>
-          <h2>What our loving users are saying <span>about us</span></h2>
-          <div>
-            <button>
-              <img src="./images/arrow-left.svg" alt="arrow-left" />
-            </button>
-            <button>
-              <img src="./images/arrow-right.svg" alt="arrow-right" />
-            </button>
-          </div>
-        </div>
-        <div>
-          <div>
-            <div>
-              <img src="./images/mark.png" alt="mark" />
-              <div>
-                <p>Mark Wood</p>
-                <p>Web Designer</p>
-              </div>
-            </div>
-            <p>
-              We are very impressed with the values and removing method. In
-              particular, we don’t use any other tools for removing image and
-              make transparent it .
-            </p>
-            <img src="./images/star.svg" alt="star" />
-            <img src="./images/star.svg" alt="star" />
-            <img src="./images/star.svg" alt="star" />
-            <img src="./images/star.svg" alt="star" />
-            <img src="./images/star.svg" alt="star" />
-          </div>
-          <div>
-            <div>
-              <img src="./images/rose.png" alt="rose" />
-              <div>
-                <p>Mark Wood</p>
-                <p>Web Designer</p>
-              </div>
-            </div>
-            <p>
-              We are very impressed with the values and removing method. In
-              particular, we don’t use any other tools for removing image and
-              make transparent it .
-            </p>
-            <img src="./images/star.svg" alt="star" />
-            <img src="./images/star.svg" alt="star" />
-            <img src="./images/star.svg" alt="star" />
-            <img src="./images/star.svg" alt="star" />
-            <img src="./images/star.svg" alt="star" />
-          </div>
-        </div>
-        <button></button>
-        <button></button>
-        <button></button>
-      </section>
-      <section>
-        <h2>Ready to <span>remove</span> the background of your image?</h2>
-        <p>
-          Remove background from images of humans, animals or objects and
-          download high-resolution images for free.
-        </p>
-        <a href="">Get Started Now</a>
-      </section>
-    </main>
-    <footer>
-      <div>
-        <div>
-          <div>
-            <img src="./images/detach.svg" alt="detach" />
-            <p>detach</p>
-          </div>
+      <section class="integrations-section grid bg-gap">
+        <div class="integrations-section__title text-ac grid md-gap">
+          <h2>Speed up Your Workflow With Our <span>Integrations</span></h2>
           <p>
             Remove background from images of humans, animals or objects and
             download high-resolution images for free.
           </p>
         </div>
-        <div>
-          <p>Tools & API</p>
-          <a href="#">API Documentation</a>
-          <a href="#">Integrations, tools & apps</a>
-          <a href="#">Photoshop Extension</a>
-          <a href="#">Windows / Mac / Linux</a>
-          <a href="#">Android App</a>
-          <a href="#">Design Templates</a>
+        <div class="flex integrations-section__cards md-gap container">
+          <div class="integrations-section__card grid sm-gap">
+            <img src="./images/figma.png" alt="figma" />
+            <p>Figma</p>
+          </div>
+          <div class="integrations-section__card grid sm-gap">
+            <img src="./images/xd.png" alt="xd" />
+            <p>Adobe XD</p>
+          </div>
+          <div class="integrations-section__card grid sm-gap">
+            <img src="./images/sketch.png" alt="sketch" />
+            <p>Sketch</p>
+          </div>
+          <div class="integrations-section__card grid sm-gap">
+            <img src="./images/woocomarce.png" alt="woo" />
+            <p>Woocommerce</p>
+          </div>
         </div>
-        <div>
-          <p>Tools & API</p>
-          <a href="#">API Documentation</a>
-          <a href="#">Integrations, tools & apps</a>
-          <a href="#">Photoshop Extension</a>
-          <a href="#">Windows / Mac / Linux</a>
-          <a href="#">Android App</a>
-          <a href="#">Design Templates</a>
-        </div>
-        <div>
-          <p>Tools & API</p>
-          <a href="#">API Documentation</a>
-          <a href="#">Integrations, tools & apps</a>
-          <a href="#">Photoshop Extension</a>
-          <a href="#">Windows / Mac / Linux</a>
-          <a href="#">Android App</a>
-          <a href="#">Design Templates</a>
-        </div>
+        <button class="btn">See All Plugins</button>
+      </section>
+
+      <div class="container">
+        <section class="about-us-section grid bg-gap">
+          <div class="flex about-us-section__header">
+            <h2 class="about-us-section__title">What our loving users are saying <span>about us</span></h2>
+            <div class="flex xsm-gap">
+              <button class="about-us-section__nav-btn--light">
+                <img src="./images/arrow-left.svg" alt="arrow-left" />
+              </button>
+              <button class="about-us-section__nav-btn--dark">
+                <img src="./images/arrow-right.svg" alt="arrow-right" />
+              </button>
+            </div>
+          </div>
+          <div class="flex bg-gap">
+            <div class="grid md-gap about-us-section__card">
+              <div class="flex xsm-gap about-us-section__profile">
+                <img src="./images/mark.png" alt="mark" />
+                <div >
+                  <p class="about-us-section__profile-name">Mark Wood</p>
+                  <p class="about-us-section__profile-position">Web Designer</p>
+                </div>
+              </div>
+              <p>
+                We are very impressed with the values and removing method. In
+                particular, we don’t use any other tools for removing image and
+                make transparent it .
+              </p>
+              <div class="flex xxsm-gap">
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+              </div>
+            </div>
+            <div class="grid md-gap about-us-section__card">
+              <div class="flex xsm-gap about-us-section__profile">
+                <img src="./images/rose.png" alt="rose" />
+                <div>
+                  <p class="about-us-section__profile-name">Mark Wood</p>
+                  <p class="about-us-section__profile-position">Web Designer</p>
+                </div>
+              </div>
+              <p>
+                We are very impressed with the values and removing method. In
+                particular, we don’t use any other tools for removing image and
+                make transparent it .
+              </p>
+              <div class="flex xxsm-gap">
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+                <img src="./images/star.svg" alt="star" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+        </section>
+        <section>
+          <h2>Ready to <span>remove</span> the background of your image?</h2>
+          <p>
+            Remove background from images of humans, animals or objects and
+            download high-resolution images for free.
+          </p>
+          <a href="">Get Started Now</a>
+        </section>
       </div>
-      <div>
-        <button>
-          <img src="./images/us.svg" alt="us" />
-          <p>English</p>
-          <img src="./images/arrow-down.svg" alt="arrow-down" />
-        </button>
+            </main>
+            <footer class="container">
         <div>
-          <a href=""><img src="./images/fb.svg" alt="fb" /></a>
-          <a href=""><img src="./images/in.svg" alt="in" /></a>
-          <a href=""><img src="./images/tw.svg" alt="tw" /></a>
+          <div>
+            <div>
+              <img src="./images/detach.svg" alt="detach" />
+              <p>detach</p>
+            </div>
+            <p>
+              Remove background from images of humans, animals or objects and
+              download high-resolution images for free.
+            </p>
+          </div>
+          <div>
+            <p>Tools & API</p>
+            <a href="#">API Documentation</a>
+            <a href="#">Integrations, tools & apps</a>
+            <a href="#">Photoshop Extension</a>
+            <a href="#">Windows / Mac / Linux</a>
+            <a href="#">Android App</a>
+            <a href="#">Design Templates</a>
+          </div>
+          <div>
+            <p>Tools & API</p>
+            <a href="#">API Documentation</a>
+            <a href="#">Integrations, tools & apps</a>
+            <a href="#">Photoshop Extension</a>
+            <a href="#">Windows / Mac / Linux</a>
+            <a href="#">Android App</a>
+            <a href="#">Design Templates</a>
+          </div>
+          <div>
+            <p>Tools & API</p>
+            <a href="#">API Documentation</a>
+            <a href="#">Integrations, tools & apps</a>
+            <a href="#">Photoshop Extension</a>
+            <a href="#">Windows / Mac / Linux</a>
+            <a href="#">Android App</a>
+            <a href="#">Design Templates</a>
+          </div>
         </div>
-      </div>
-      <p>Copyright @UIHUT 2022</p>
-    </footer>
+        <div>
+          <button>
+            <img src="./images/us.svg" alt="us" />
+            <p>English</p>
+            <img src="./images/arrow-down.svg" alt="arrow-down" />
+          </button>
+          <div>
+            <a href=""><img src="./images/fb.svg" alt="fb" /></a>
+            <a href=""><img src="./images/in.svg" alt="in" /></a>
+            <a href=""><img src="./images/tw.svg" alt="tw" /></a>
+          </div>
+        </div>
+        <p>Copyright @UIHUT 2022</p>
+            </footer>
   </body>
 </html>

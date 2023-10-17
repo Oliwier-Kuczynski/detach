@@ -68,8 +68,8 @@
 
                     $sql = "INSERT INTO users (first_name, last_name, email, password) VALUES ('$first_name', '$last_name', '$email', '$password')";
 
-                    if($conn->query($sql) === "TRUE") {
-                        header("Location: http://localhost/detach/login.php");
+                    if($conn->query($sql) == "TRUE") {
+                        header("Location: login.php");
                     }
                 }
             } else {
