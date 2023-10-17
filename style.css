@@ -195,7 +195,11 @@ h2,
   margin-top: 10rem;
 }
 
+<<<<<<< HEAD
 .comparison-section > div {
+=======
+.comparison-section > div{
+>>>>>>> b26594b9c224d54557fe932cd06126a99c208851
   margin-top: 10rem;
   gap: 10rem;
 }
@@ -210,4 +214,8 @@ h2,
 
 .about-us-section {
   margin-top: 10rem;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b26594b9c224d54557fe932cd06126a99c208851
