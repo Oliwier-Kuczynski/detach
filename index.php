@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,8 +25,15 @@
           <a href="#">Contact</a>
         </div>
         <div class="flex bg-gap">
-          <a href="login.php">Log in</a>
-          <a href="register.php">Sign up</a>
+          <?php
+            if(isset($_SESSION["logged_in"])) {
+              echo "<a href='account.php'>Account</a>";
+              echo "<a href='logout.php'>Log out</a>";
+            }else {
+              echo "<a href='login.php'>Log in</a>";
+              echo "<a href='register.php'>Sign up</a>";
+            }
+          ?>
         </div>
       </nav>
       <header class="header flex">
@@ -183,12 +194,14 @@
       <div class="container">
         <section class="about-us-section grid bg-gap">
           <div class="flex about-us-section__header">
-            <h2 class="about-us-section__title">What our loving users are saying <span>about us</span></h2>
+            <h2 class="about-us-section__title">
+              What our loving users are saying <span>about us</span>
+            </h2>
             <div class="flex xsm-gap">
-              <button class="about-us-section__nav-btn--light">
+              <button class="about-us-section__nav-btn--dark">
                 <img src="./images/arrow-left.svg" alt="arrow-left" />
               </button>
-              <button class="about-us-section__nav-btn--dark">
+              <button class="about-us-section__nav-btn--ligth">
                 <img src="./images/arrow-right.svg" alt="arrow-right" />
               </button>
             </div>
@@ -197,7 +210,7 @@
             <div class="grid md-gap about-us-section__card">
               <div class="flex xsm-gap about-us-section__profile">
                 <img src="./images/mark.png" alt="mark" />
-                <div >
+                <div>
                   <p class="about-us-section__profile-name">Mark Wood</p>
                   <p class="about-us-section__profile-position">Web Designer</p>
                 </div>
@@ -237,35 +250,38 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="about-us-section__slide-btns flex xxsm-gap">
             <button></button>
             <button></button>
             <button></button>
           </div>
         </section>
-        <section>
-          <h2>Ready to <span>remove</span> the background of your image?</h2>
-          <p>
-            Remove background from images of humans, animals or objects and
-            download high-resolution images for free.
-          </p>
-          <a href="">Get Started Now</a>
-        </section>
-      </div>
-            </main>
-            <footer class="container">
-        <div>
-          <div>
-            <div>
-              <img src="./images/detach.svg" alt="detach" />
-              <p>detach</p>
-            </div>
+        <section class="ready-to-section">
+          <div class="ready-to-section__content grid bg-gap">
+            <h2>Ready to <span>remove</span> the background of your image?</h2>
             <p>
               Remove background from images of humans, animals or objects and
               download high-resolution images for free.
             </p>
+            <a href="" class="btn ready-to-section__btn">Get Started Now</a>
           </div>
-          <div>
+        </section>
+      </div>
+    </main>
+    <footer class="container footer">
+      <div class="flex footer__content">
+        <div class="footer__description">
+          <div class="flex xsm-gap footer__description__header">
+            <img src="./images/detach.svg" alt="detach" />
+            <p>detach</p>
+          </div>
+          <p>
+            Remove background from images of humans, animals or objects and
+            download high-resolution images for free.
+          </p>
+        </div>
+        <div class="flex bg-gap">
+          <div class="grid xsm-gap">
             <p>Tools & API</p>
             <a href="#">API Documentation</a>
             <a href="#">Integrations, tools & apps</a>
@@ -274,7 +290,7 @@
             <a href="#">Android App</a>
             <a href="#">Design Templates</a>
           </div>
-          <div>
+          <div class="grid xsm-gap">
             <p>Tools & API</p>
             <a href="#">API Documentation</a>
             <a href="#">Integrations, tools & apps</a>
@@ -283,7 +299,7 @@
             <a href="#">Android App</a>
             <a href="#">Design Templates</a>
           </div>
-          <div>
+          <div class="grid xsm-gap">
             <p>Tools & API</p>
             <a href="#">API Documentation</a>
             <a href="#">Integrations, tools & apps</a>
@@ -293,19 +309,20 @@
             <a href="#">Design Templates</a>
           </div>
         </div>
-        <div>
-          <button>
-            <img src="./images/us.svg" alt="us" />
-            <p>English</p>
-            <img src="./images/arrow-down.svg" alt="arrow-down" />
-          </button>
-          <div>
-            <a href=""><img src="./images/fb.svg" alt="fb" /></a>
-            <a href=""><img src="./images/in.svg" alt="in" /></a>
-            <a href=""><img src="./images/tw.svg" alt="tw" /></a>
-          </div>
+      </div>
+      <div class="flex footer__additional">
+        <button class="footer__language-btn">
+          <img src="./images/us.svg" alt="us" />
+          <p>English</p>
+          <img src="./images/arrow-down.svg" alt="arrow-down" />
+        </button>
+        <div class="flex sm-gap">
+          <a href=""><img src="./images/fb.svg" alt="fb" /></a>
+          <a href=""><img src="./images/in.svg" alt="in" /></a>
+          <a href=""><img src="./images/tw.svg" alt="tw" /></a>
         </div>
-        <p>Copyright @UIHUT 2022</p>
-            </footer>
+      </div>
+      <p class="footer__copy">Copyright @UIHUT 2022</p>
+    </footer>
   </body>
 </html>
